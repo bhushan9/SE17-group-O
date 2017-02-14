@@ -12,17 +12,23 @@ def test():
 	article.download()
 	article.parse()
 	return article.text
- 
 
 @app.route('/signup', methods = ['POST','GET'])
 def signup():
-	email=request.form['dailymail']
-	print(email)
-	return test()
+	if request.method == 'POST':
+		value = ''
+        	if request.form['submit'] == 'dailymail':
+			value = 'dailymail'
+        	elif request.form['submit'] == 'cnn':
+			value = 'cnn'
+
+		return value + ' \r ' + test()
+
+	elif request.method == 'GET':
+		pass
 
 @app.route("/")
 def main():
-
 	return render_template("index.html")
     #return "Welcome!"
 
