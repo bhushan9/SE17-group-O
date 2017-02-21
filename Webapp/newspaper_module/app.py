@@ -8,7 +8,10 @@ def test():
 	#d={'dailymail' : 'http://www.dailymail.co.uk/ushome/index.html','bbc':'http://www.bbc.com/news','economist':'http://www.economist.com/'}
 	
 	dailymail=newspaper.build('http://www.dailymail.co.uk/ushome/index.html')
-	article=dailymail.articles[0]
+	if dailymail.articles:
+		article=dailymail.articles[0]
+	else:
+		article = ""
 	article.download()
 	article.parse()
 	return article.text
