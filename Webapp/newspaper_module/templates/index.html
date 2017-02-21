@@ -10,13 +10,27 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type=text/javascript>
+    $(function() {
+      $('form[name="test"]').bind('click', function() {
+        $.getJSON('/_add_numbers', {
+          a: $('input[name="a"]').val(),
+          b: $('input[name="b"]').val()
+        }, function(data) {
+          $("#result").text(data.result);
+        });
+        return false;
+      });
+    });
+  </script>
 </head>
 <body>
 
 <div class="text-center"
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
-    <form action="/signup" method="post" class="navbar-form navbar-center">
+    <form action="/signup" method="post" class="navbar-form navbar-center" name="test">
     <div class="btn-group">
   <input type="submit" name="submit" value="Dailymail" class="btn btn-primary btn-lg "/>
   <input type="submit" name="submit" value="CNN" class="btn btn-primary btn-lg "/>
@@ -38,10 +52,14 @@
         <div style="clear:both"></div>
     </div>
      
-    <div id="newsfeed"></div>
+    <div id="newsfeed">
+   
+	
+</div>
      
   
 </div>
+
 
  
 </body>

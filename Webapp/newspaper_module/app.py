@@ -1,8 +1,13 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify
+from sys import argv
 import newspaper
 import nltk
 app = Flask(__name__)
 
+
+file = open("Dailymail.txt" , 'w')
+file.write("hello world")
+file.close()
 
 def test(value):
 	news_link_dict={'Dailymail' : 'http://www.dailymail.co.uk/ushome/index.html', \
@@ -27,8 +32,8 @@ def signup():
 		value = request.form['submit']
         	
 
-
-		return value + ' \r ' +test(value)
+		return jsonify(test(value))
+		#return value + ' \r ' +test(value)
 
 	elif request.method == 'GET':
 		pass
@@ -40,7 +45,6 @@ def main():
 
 if __name__ == "__main__":
     app.run()    
-
 
 
 
