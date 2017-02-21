@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html> 
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>The Wolfpack Post</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type=text/javascript>
+    $(function() {
+      $('form[name="test"]').bind('click', function() {
+        $.getJSON('/_add_numbers', {
+          a: $('input[name="a"]').val(),
+          b: $('input[name="b"]').val()
+        }, function(data) {
+          $("#result").text(data.result);
+        });
+        return false;
+      });
+    });
+  </script>
 </head>
 <body>
 
 <div class="text-center"
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
-    <form action="/signup" method="post" class="navbar-form navbar-center">
+    <form action="/signup" method="post" class="navbar-form navbar-center" name="test">
     <div class="btn-group">
-  <input type="submit" name="submit" value="dailymail" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="cnn" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="news1" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="news2" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="news3" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="news4" class="btn btn-primary btn-lg "/>
-  <input type="submit" name="submit" value="news5" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="Dailymail" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="CNN" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="The New York Times" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="The Economist" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="The Atlantic" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="BBC" class="btn btn-primary btn-lg "/>
+  <input type="submit" name="submit" value="The Guardian" class="btn btn-primary btn-lg "/>
   </div>
 </form>
   </div>
 </nav>
+</div>
+
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>
+        <p class="logout"><a id="exit" href="#">Exit Feed</a></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="newsfeed">
+   
+	
+</div>
+     
+  
 </div>
 
 
