@@ -29,6 +29,7 @@ def test(value):
 	except:
 		return 'lol sorry'
 
+
 @app.route('/signup', methods = ['POST','GET'])
 def signup():
 	if request.method == 'POST':
@@ -41,11 +42,15 @@ def signup():
 	elif request.method == 'GET':
 		pass
 
+
 @app.route("/")
 def main():
-	
-	return render_template("index.html")
-    #return "Welcome!"
+	content = ''
+	try:
+		with open('bbc.txt', 'r') as f: content = f.read()
+	except:
+		content = 'no file'
+	return render_template("index.html", content=content)
 
 if __name__ == "__main__":
     app.run()    
