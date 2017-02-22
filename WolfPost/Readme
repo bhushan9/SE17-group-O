@@ -1,4 +1,5 @@
 run the following commands in the directory, WolfPost.
-1. export $FLAG_CONFIG=development
-2. export $FLAG_APP=run.py
-python -m flask run
+
+1. export FLASK_CONFIG=development
+2. export FLASK_APP=run.py
+3. python -m flask run
