@@ -67,7 +67,10 @@ def news():
     if request.method == 'POST':
     	value = request.form['submit']
 	news = unpickle_news()
-    	content = news[value][0]['summary']
+	try:
+    	    content = news[value][0]['summary']
+        except KeyError:
+            content = 'Key Error. No value for ' + value 
     elif request.method == 'GET':
 	content = 'No News Found For Source'
     	pass
