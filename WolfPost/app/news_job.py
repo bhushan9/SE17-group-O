@@ -22,7 +22,7 @@ def pickle_news(data):
 	file.close()
 
 
-def unpickle_news()
+def unpickle_news():
 	#Unpickle news file
 	file = open('news.data', 'r')
 	data = pickle.load(file)
