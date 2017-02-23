@@ -10,6 +10,7 @@ import nltk
 
 
 def parse_article(article):
+	#Run manditory article code, return title, summary, image and url
 	article.download()
 	article.parse()
 	article.nlp()
@@ -27,30 +28,27 @@ def unpickle_news():
 	#Unpickle news file
 	file = open('news.data', 'r')
 	data = pickle.load(file)
-	return dat
+	return data
 
 
 def download_news():
-	news_sources = ['http://www.dailymail.co.uk/',
-			'http://www.kotaku.com',
-			'http://www.msn.com',
-			'http://www.ign.com',
-			'http://www.fox.com',
-			'http://www.nytimes.com',
-			'http://www.theguardian.com',
-			'http://www.bbc.com']
-
-	sites = []
-	for source in news_sources:
-		print source
-		news = newspaper.build(source)
+	news_sources = {'Dailymail' 	: 'http://www.dailymail.co.uk/ushome/index.html',
+			'BBC'		: 'http://www.bbc.com/news',
+			'The Economist'	: 'http://www.economist.com',
+			'CNN' 		: 'http://www.cnn.com',
+			'New York Times': 'https://www.nytimes.com',
+			'The Atlantic'	: 'https://www.theatlantic.com',
+			'The Guardian'	: 'https://www.theguardian.com/us'}
+	sites = dict()
+	for source_key in news_sources:
+		#print source_key + '\t\t' + news_sources[source_key]
+		news = newspaper.build(news_sources[source_key])
 		site_articles = []
 
 		num = 1
 		for article in news.articles:
 			if num > 3: break
 			else: num += 1
-
 			try:
 				title, summary, image, url = parse_article(article)
 				article_list = dict()
@@ -66,15 +64,15 @@ def download_news():
 		if not site_articles:
 			pass
 		else:
-			sites.append(site_articles)
+			sites[source_key] = site_articles
 
 	#if sites list has data, save file
-	if sites: pickle_news(sites)
-	print sites
+	if sites:
+		pickle_news(sites);
+		print 'News Updated Successfully'
 
 
 def news_job():
-	#scheduler = BlockingScheduler()
 	scheduler = BackgroundScheduler()
 	scheduler.add_job(download_news, 'interval', minutes = 10)
 	scheduler.start()
