@@ -5,6 +5,7 @@ from flask_login import current_user, login_required
 from sys import argv
 import newspaper
 import nltk
+import pickle
 
 from . import home
 
@@ -15,6 +16,7 @@ def homepage():
     """
     return render_template('home/index.html', title="Welcome")
 
+
 @home.route('/dashboard')
 @login_required
 def dashboard():
@@ -22,14 +24,16 @@ def dashboard():
     Render the dashboard template on the /dashboard route
     """
     return render_template('home/dashboard.html', title="Dashboard")
-    
+
+
 @home.route('/admin/dashboard')
 @login_required
 def admin_dashboard():
     if not current_user.is_admin:
     	abort(403)
     return render_template('home/admin_dashboard.html', title = "Dashboard")
-    
+
+
 def test(value):
     news_link_dict={'Dailymail' : 'http://www.dailymail.co.uk/ushome/index.html', \
 	'BBC':'http://www.bbc.com/news', \
@@ -48,14 +52,24 @@ def test(value):
     article.nlp()
     return article.summary
 
+
+def unpickle_news():
+	#Unpickle news file
+	file = open('news.data', 'r')
+	data = pickle.load(file)
+	return data
+
+
 @home.route('/news', methods = ['POST','GET'])
 @login_required
 def news():
-    content = " "
+    content = ''
     if request.method == 'POST':
     	value = request.form['submit']
-    	return jsonify(test(value))
+	news = unpickle_news()
+    	content = news[value][0]['summary']
     elif request.method == 'GET':
+	content = 'No News Found For Source'
     	pass
     	
     return render_template('home/news.html', title = "News", content = content)			
