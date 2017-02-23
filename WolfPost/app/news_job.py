@@ -1,4 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 import pickle
 
 import logging
@@ -36,7 +37,7 @@ def download_news():
 			'http://www.ign.com',
 			'http://www.fox.com',
 			'http://www.nytimes.com',
-			'http://theguardian.com',
+			'http://www.theguardian.com',
 			'http://www.bbc.com']
 
 	sites = []
@@ -73,8 +74,9 @@ def download_news():
 
 
 def news_job():
-	scheduler = BlockingScheduler()
-	scheduler.add_job(download_news, 'interval', minutes = 5)
+	#scheduler = BlockingScheduler()
+	scheduler = BackgroundScheduler()
+	scheduler.add_job(download_news, 'interval', minutes = 10)
 	scheduler.start()
 
 
