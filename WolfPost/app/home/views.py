@@ -55,7 +55,7 @@ def test(value):
 
 def unpickle_news():
 	#Unpickle news file
-	file = open('news.data', 'r')
+	file = open('news/news.data', 'r')
 	data = pickle.load(file)
 	return data
 

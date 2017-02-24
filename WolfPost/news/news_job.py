@@ -19,14 +19,14 @@ def parse_article(article):
 
 def pickle_news(data):
 	#Save data as pickle (special python file that can be loaded into a variable)
-	file = open('news.data', 'w')
+	file = open('news/news.data', 'w')
 	pickle.dump(data, file)
 	file.close()
 
 
 def unpickle_news():
 	#Unpickle news file
-	file = open('news.data', 'r')
+	file = open('news/news.data', 'r')
 	data = pickle.load(file)
 	return data
 
@@ -41,7 +41,7 @@ def download_news():
 			'The Guardian'	: 'https://www.theguardian.com/us'}
 	sites = dict()
 	for source_key in news_sources:
-		#print source_key + '\t\t' + news_sources[source_key]
+		print source_key + '\t\t' + news_sources[source_key]
 		news = newspaper.build(news_sources[source_key])
 		site_articles = []
 
@@ -74,7 +74,7 @@ def download_news():
 
 def news_job():
 	scheduler = BackgroundScheduler()
-	scheduler.add_job(download_news, 'interval', minutes = 10)
+	scheduler.add_job(download_news, 'interval', minutes = 5)
 	scheduler.start()
 
 
