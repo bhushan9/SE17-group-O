@@ -74,7 +74,7 @@ def download_news():
 
 def news_job():
 	scheduler = BackgroundScheduler()
-	scheduler.add_job(download_news, 'interval', minutes = 5)
+	scheduler.add_job(download_news, 'interval', minutes = 10)
 	scheduler.start()
 
 
