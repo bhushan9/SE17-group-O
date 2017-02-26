@@ -74,6 +74,7 @@ def news():
     elif request.method == 'GET':
 	content = 'No News Found For Source'
     	pass
-    	
-    return render_template('home/news.html', title = "News", content = content)			
+    
+    summary = content
+    return render_template('home/news.html', title = "News", content = content, summary = summary)			
     	    

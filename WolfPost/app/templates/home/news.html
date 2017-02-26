@@ -8,13 +8,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
-<div class="text-center"
+<div class="text-center">
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <form action="/news" method="post" class="navbar-form navbar-center" name="test">
@@ -33,6 +34,7 @@
 </div>
 
 <div id="wrapper">
+    <input onclick='responsiveVoice.speak("{{summary}}");' type='button' value='Play Audio' />
     <div id="menu">
         <p class="welcome">Welcome, <b></b></p>
         <p class="logout"><a id="exit" href="#">Exit Feed</a></p>
