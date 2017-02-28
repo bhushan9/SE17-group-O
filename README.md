@@ -25,7 +25,6 @@ process of development. It will be also combined with a Twitter API, that could 
 
 The second method was to provide an audio interface that could produce the news as media file. It is in development.
 
-##Solution3: Text Message/Email
+##Solution3: Twitter Bot
 
-Sending news via email or text message. This will be done using a server intermediated by a javascript code. It is in the process of
-development.
+Social media has become a media gateway for younger internet users. In order to explore this market, we will be distributing short news summaries using Twitter. The current Twitter page can be found under the username WolfpackPost [WolfpackPost](https://twitter.com/WolfpackPost).
