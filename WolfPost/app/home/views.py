@@ -6,6 +6,7 @@ from sys import argv
 import newspaper
 import nltk
 import pickle
+import re
 
 from . import home
 
@@ -60,6 +61,11 @@ def unpickle_news():
 	return data
 
 
+def clean_content(text):
+	do_not_remove = '.!?= -+%$'
+	return re.sub(r'[^\w'+do_not_remove+']', '', text) 
+
+
 @home.route('/news', methods = ['POST','GET'])
 @login_required
 def news():
@@ -75,6 +81,5 @@ def news():
 	content = 'No News Found For Source'
     	pass
     
-    summary = content
-    return render_template('home/news.html', title = "News", content = content, summary = summary)			
-    	    
+    tts_summary = clean_content(content)
+    return render_template('home/news.html', title = "News", content = content, tts_summary = tts_summary)    	    
