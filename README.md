@@ -18,7 +18,7 @@ We designed a Web Application that allows the users to create accounts and read 
 
 ##Solution2: Text-to-Speech News summarizer
 
-The second method was to provide an audio interface that could produce the news as media file. It is in development.
+The second method was to provide an audio interface that could produce the news as computer generated speech. We are currently using a Javascript library to acomplish this.
 
 ##Solution3: Twitter Bot
 
