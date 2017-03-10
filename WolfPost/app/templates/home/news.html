@@ -17,12 +17,11 @@
 {% block title %}Dashboard{% endblock %}
 {% block body %}
 
+</br>
 
 
-<div class="text-center">
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <form action="/news" method="post" class="navbar-form navbar-center" name="test">
+<div class="navbar">
+    <form action="/news" method="post" name="test">
     <div class="btn-group">
   <input type="submit" name="submit" value="Dailymail" class="btn btn-primary btn-lg "/>
   <input type="submit" name="submit" value="CNN" class="btn btn-primary btn-lg "/>
@@ -33,15 +32,17 @@
   <input type="submit" name="submit" value="The Guardian" class="btn btn-primary btn-lg "/>
   </div>
 </form>
-  </div>
-</nav>
+
 </div>
 
 <div id="wrapper">
     <input onclick='responsiveVoice.speak("{{tts_summary}}");' type='button' value='Play Audio' />
-    <div id="menu">
-        <p class="welcome">Welcome, <b></b></p>
-        <p class="logout"><a id="exit" href="#">Exit Feed</a></p>
+    <div id="menu"> 
+      
+        <p class="welcome"><center>NewsFeed</center> <b></b></p>
+      
+        
+        
         <div style="clear:both"></div>
     </div>
      
