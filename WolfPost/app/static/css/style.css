@@ -11,11 +11,11 @@ body, h1, h2, h3 {
 }
 
 a, .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-  color: #aec251;
+  color: #000000;
 }
 
 a:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
-  color: #687430;
+  color: #cc0000;
 }
 
 footer {
@@ -107,3 +107,4 @@ p.copyright {
   height: 100%;
   margin: 0 auto -4em;
 }
+
