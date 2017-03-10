@@ -70,11 +70,17 @@ def clean_content(text):
 @login_required
 def news():
     content = ''
+    title = ''
+    url = ''
+    image = ''
     if request.method == 'POST':
     	value = request.form['submit']
 	news = unpickle_news()
 	try:
     	    content = news[value][0]['summary']
+            title = news[value][0]['title']
+            url = news[value][0]['url']
+            image = news[value][0]['image']
         except KeyError:
             content = 'Key Error. No value for ' + value 
     elif request.method == 'GET':
@@ -82,4 +88,4 @@ def news():
     	pass
     
     tts_summary = clean_content(content)
-    return render_template('home/news.html', title = "News", content = content, tts_summary = tts_summary)    	    
+    return render_template('home/news.html', title = title , content = content, tts_summary = tts_summary)    	    
