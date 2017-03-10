@@ -1,201 +1,300 @@
 (dp0
-S'CNN'
+S'Dailymail'
 p1
 (lp2
 (dp3
 S'url'
 p4
-Vhttp://www.cnn.com/2015/12/18/health/drug-overdose-deaths-2014/
+Vhttp://www.dailymail.co.uk/wires/ap/article-4301648/Newark-archbishop-leading-rally-man-facing-deportation.html?ITO=1490&amp;ns_mchannel=rss&amp;ns_campaign=1490
 p5
 sS'image'
 p6
-Vhttp://i2.cdn.cnn.com/cnnnext/dam/assets/120406011331-prescription-drugs-generic-story-top.jpg
+Vhttp://i.dailymail.co.uk/1/2017/03/10/15/wire-196633-1489158862-475_636x382.jpg
 p7
 sS'summary'
 p8
-VStory highlights In 2014, 47,055 people died from drug overdosesSince 2000, opioid drug overdoses have jumped 200%(CNN) Despite efforts to fight the opioid epidemic, deaths from drug overdoses reached an all-time high in 2014, according to the Centers for Disease Control and Prevention.\u000aAccording to the CDC, the increase in synthetic opioid deaths coincided with increased reports by law enforcement of illicitly manufactured fentanyl.\u000aLast year, 47,055 people died from drug overdoses -- 1.5 times greater than the number killed in car crashes.\u000aOpioids are involved in 61% of all drug overdose deaths.\u000aDeaths from heroin overdoses rose 26%.
+VNEWARK, N.J. (AP) - A man facing possible deportation had some notable names in his corner ahead of a meeting with federal immigration authorities on Friday, including several dozen clergy members who showed their support by marching to a federal building in Newark.\u000aHundreds of houses of worship around the country have joined the sanctuary movement, which provides support or housing to people facing deportation.\u000aTobin has been critical of President Donald Trump's immigration policies.\u000aCatalino Guerrero, center left, stands with U.S. Sen. Bob Menendez, left, and Newark Archbishop Cardinal Joseph Tobin, center right, during a rally outside of the Peter Rodino Federal Building before attending an immigration hearing, Friday, March 10, 2017, in Newark, N.J. Guerrero, who arrived in the U.S. illegally in 1991, is facing deportation.\u000a(AP Photo/Julio Cortez)Catalino Guerrero, center, walks with U.S. Sen. Bob Menendez, left, and Newark Archbishop Cardinal Joseph Tobin, right, during a rally outside of the Peter Rodino Federal Building before attending an immigration hearing, Friday, March 10, 2017, in Newark, N.J. Guerrero, who arrived in the U.S. illegally in 1991, is facing deportation.
 p9
 sS'title'
 p10
-VDrug overdose deaths reach all-time high
+VNewark archbishop leading rally for man facing deportation
 p11
 sa(dp12
 g4
-Vhttp://www.cnn.com/2017/02/22/health/iyw-hope-thru-soap-trnd/index.html
+Vhttp://www.dailymail.co.uk/tvshowbiz/article-4300636/Noah-Bubl-doing-following-cancer-treatment.html
 p13
 sg6
-Vhttp://i2.cdn.cnn.com/cnnnext/dam/assets/170222124614-02-hope-thru-soap-super-tease.jpg
+Vhttp://i.dailymail.co.uk/i/pix/2017/03/10/10/3E22349B00000578-0-image-a-91_1489141964472.jpg
 p14
 sg8
-VOne " Hope Thru Soap " user, Nathan, lost his home recently and found the mobile unit while walking through a park.\u000aIn 2016, Winter's fervor to help turned into a free-service program called "Hope Thru Soap."\u000aThe unit is furnished with a shower, a toilet, hot water, heat and air conditioning, but more importantly, it comes equipped with hope.\u000aStory highlights Hope Thru Soap is a mobile unit that provides free showers to homeless people"Something as small as a shower gives them hope," says Hope Thru Soap's founder(CNN) Every weekend, Jason Winter hooks his shiny aluminum 12-foot long trailer to the back of his SUV and heads to metro Atlanta, where he provides homeless people with a sanitary and private space to bathe.\u000aThe mobile unit comes with a shower, a toilet, hot water, heat and air conditioning.
+VThe uncle of Noah Bublé has said the little boy is 'doing very well' following his treatment for liver cancer.\u000aThey said: 'We are devastated about the recent cancer diagnosis of our oldest son Noah who is currently undergoing treatment in the US.\u000aScroll down for videoRecovering: Michael Bublé's brother-in-law has said the singer's son Noah is 'doing very well' following his treatment for liver cancerSpeaking to the newspaper in his Native Argentina, the actor, 36, revealed that the three-year-old is making good progress following his shocking diagnosis.\u000aHe said: 'After these very long months Noah is doing well, very well.'\u000aNoah is doing well and his parents will speak when they want to.'
 p15
 sg10
-VHope Thru Soap offers showers to homeless people
+VNoah Bublé is 'doing very well' following cancer treatment
 p16
 sa(dp17
 g4
-Vhttp://www.cnn.com/2017/02/23/news/olympic-games-cost-budapest-2024/index.html
+Vhttp://www.dailymail.co.uk/tvshowbiz/article-4300524/Ed-Sheeran-celebrates-chart-success-casual-dinner.html?ITO=1490&amp;ns_mchannel=rss&amp;ns_campaign=1490
 p18
 sg6
-V
+Vhttp://i.dailymail.co.uk/i/pix/2017/03/10/09/3E21DF8600000578-0-image-a-66_1489137917203.jpg
 p19
 sg8
-VIt could be you, or it could be us, but there's no page here.
+VEd unveiled his third record, Divide, on Friday, and it soared to the number one spot on the UK Album Chart in just three days.\u000aMaintinaing the athletic vibe throughout, Ed then accessorised with an oversized black cap and his trademark geek-chic glasses.\u000aSo it is no wonder Ed Sheeran was in the mood to celebrate on Thursday night, as he headed out for dinner and drinks with his management team in London.\u000aHis latest album has been his most successful to date - amassing a whopping 56 million streams on its first day of release alone.\u000aKnown for his rocker style, he paired the knit with simple black skinny jeans and a pair of black and grey trainers for a sporty edge.
 p20
 sg10
-VError
+VEd Sheeran celebrates chart success with casual dinner
 p21
-sasS'The Economist'
+sasS'BBC'
 p22
 (lp23
 (dp24
 g4
-Vhttps://execed.economist.com/porto-business-school/design-thinking-and-innovation-action-2017-03-29-0?gsrc=wmbaslider
+Vhttp://www.bbc.co.uk/news/business-39176358
 p25
 sg6
-Vhttps://maps.googleapis.com/maps/api/staticmap?zoom=15&size=200x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C41.183138200000,-8.653531300000
+Vhttp://ichef.bbci.co.uk/news/1024/cpsprodpb/75C2/production/_95064103_currygettyimages.jpg
 p26
 sg8
-VThis 2-day programme focuses on delivering to you essential skills and practices \u2013 ways of thinking \u2013 drawn from the fields of critical thinking, design thinking and systems thinking.\u000aIt is a set of skills, tools, and mental models that will allow you to lead innovation.\u000adesign thinking \u2013 to understand problems and craft solutions.\u000aDealing with them requires innovative leadership and new ways of understanding both problems, solutions and context.\u000aHowever, it is perhaps even more critical to become an experienced problem finder \u2013 solving the wrong problem may be worse than not solving a problem at all.
+VImage copyright Getty ImagesA washing machine has been launched for the Indian market, with a special mode to tackle curry stains.\u000aImage copyright PAnasonic Image caption Panasonic 'StainMaster' model is marketed in India to remove curry stainsOnly about 10% of homes in India have a washing machine, with most people still doing their laundry by hand.\u000aIt says development took two years, testing combinations of water temperature and water flow.\u000aPanasonic entered the India market in 1990, first producing rice cookers and then expanding its line to also manufacture air conditioners.\u000aPanasonic said the introduction of a 'curry' button followed complaints from customers struggling to fully get the food off their clothes.
 p27
 sg10
-VDesign Thinking And Innovation In Action
+VIndia washing machine launched with 'curry' button
 p28
 sa(dp29
 g4
-Vhttp://www.economist.com/news/finance-and-economics/21717393-advanced-technology-backward-banks-and-soaring-wealth-make-china-leader
+Vhttp://www.bbc.co.uk/news/uk-39234079
 p30
 sg6
-Vhttp://cdn.static-economist.com/sites/default/files/images/print-edition/20170225_FND001_0.jpg
+Vhttp://ichef.bbci.co.uk/news/1024/cpsprodpb/1855D/production/_95077699_mediaitem95077696.jpg
 p31
 sg8
-VA ranking of the world\u2019s most innovative fintech firms gave Chinese companies four of the top five slots last year.\u000aThe hunch was that fintech firms were small enough for any problems to be manageable, and might produce useful innovations.\u000aIn the market segments they have set their sights on, fintech firms have made a big mark.\u000aSome of the regulations, though, also constrain what fintech firms can hope to achieve.\u000aThis points to the third area of China\u2019s fintech prowess: investment.
+VImage copyright PA Image caption Jack Monroe sued Hopkins over tweets she said caused "serious harm" to her reputationFood blogger Jack Monroe has won £24,000 damages in a libel action against columnist Katie Hopkins after a row over two tweets.\u000aMs Monroe sued the writer over two war memorial tweets she said caused "serious harm" to her reputation.\u000aMs Monroe said that meant she had either vandalised a war memorial or "condoned or approved" of it.\u000aIn his judgement Mr Justice Warby ruled that the publications had caused "Ms Monroe real and substantial distress" and she was entitled to "fair and reasonable compensation".\u000aMs Hopkins posted tweets in May 2015 asking her if she had "scrawled on any memorials recently".
 p32
 sg10
-VThe age of the appacus: In fintech, China shows the way
+VJack Monroe wins Katie Hopkins libel tweet case
 p33
 sa(dp34
 g4
-Vhttp://www.economist.com/news/americas/21717439-many-governments-are-failing-their-most-basic-task-costs-latin-american-crime
+Vhttp://www.bbc.co.uk/news/entertainment-arts-39206726
 p35
 sg6
-Vhttp://cdn.static-economist.com/assets/the-economist-logo.png
+Vhttp://ichef-1.bbci.co.uk/news/1024/cpsprodpb/15A2F/production/_95032688_brieheadshot_pa.jpg
 p36
 sg8
-VA casual scan of newspapers in Latin America and the Caribbean in any week reveals a grave problem: violent crime has become an epidemic.\u000aNo wonder polls show that crime has replaced the economy as the main public concern in Latin America.\u000aAs well as inflicting immeasurable suffering, violent crime is a big obstacle to economic development.\u000aIn the average Latin American country the annual cost of crime is 3.6% of GDP, they reckon.\u000aIn some ways crime in Latin America is similar to that in the rich world.
+VKong: Skull Island sees Brie play Mason Weaver, who describes herself as an "anti-war photographer" and is chosen to document a 1970s expedition to Skull Island.\u000aImage copyright Warner Bros Image caption Kong: Skull Island sees Brie Larson play "anti-war photographer" Mason WeaverMore women need to get behind the camera so Hollywood can move away from thinking female characters are either "strong" or "mothering", says Oscar winner Brie Larson.\u000aKong: Skull Island is on general release now.\u000aWhereas Room required intense psychological training, Brie had to endure tough physical training for her time on Skull Island.\u000a"I love that we're seeing stronger women on the screen - but I don't think that's the end of this conversation," she says.
 p37
 sg10
-VBello: The costs of Latin American crime
+VKong star Brie Larson calls for more women behind the camera
 p38
-sasS'The Guardian'
+sasS'The Atlantic'
 p39
 (lp40
 (dp41
 g4
-Vhttps://www.theguardian.com/books/2017/feb/21/milo-yiannopoulos-book-deal-cancelled-outrage-child-abuse-comments
+Vhttps://psmag.com/finding-the-american-dream-in-el-salvador-4f456f81f26f
 p42
 sg6
-Vhttps://i.guim.co.uk/img/media/310ea2510c13d46ddf1533adf7be530e25e1e14a/0_55_2000_1200/master/2000.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=768541ba9277dd29ee902719dbdd7e83
+Vhttps://cdn-images-1.medium.com/focal/1200/632/72/52/1*3ZQB6uglaEG3pWFC-TBeUg.jpeg
 p43
 sg8
-VSimon & Schuster has cancelled the publication of Milo Yiannopoulos\u2019 book, and his fellow Breitbart employees have reportedly threatened to quit if he is not fired.\u000aAccording to Yiannopoulos\u2019 Facebook page, the book \u2013 an autobiography titled Dangerous \u2013 was due out on 13 June.\u000aYiannopoulos\u2019 book deal with Simon & Schuster was condemned by many who perceived the publishers to be giving him a mainstream platform for his often offensive and controversial views.\u000aColor of Change, a US organisation for racial justice, had campaigned online against Simon & Schuster since the book was announced.\u000aBecause it\u2019s led to confusion.\u201dRoxane Gay pulls book from Simon & Schuster over Milo Yiannopoulos deal Read moreThe video was no longer available on Facebook three hours after it was posted.
+VAccording to a Pew Research Center report of 2013, El Salvador received a total of USD 4.2 billion in remittances.\u000aHis death provoked the civil war in El Salvador that lasted 12 years.\u000aOn the entrance wall is a large poster of Oscar Romero, the archbishop of El Salvador who spoke out against social injustice and was assassinated in 1980.\u000aThe story of the Rodriguez family is congruent with that of almost every household in Hacienda Vieja.\u000aUp in the hills of El Salvador, adjacent to Honduras, the village is today mostly inhabited by children and older people like Rodriguez.
 p44
 sg10
-VMilo Yiannopoulos book deal cancelled after outrage over child abuse comments
+VFinding the American Dream in El Salvador \u2013 Pacific Standard
 p45
 sa(dp46
 g4
-Vhttps://www.theguardian.com/commentisfree/2017/feb/23/milo-yiannopoulos-british-celebrities-in-america-phoney-provocateur
+Vhttps://www.theatlantic.com/politics/archive/2017/03/perceptions-discrimination-muslims-christians/519135/
 p47
 sg6
-Vhttps://i.guim.co.uk/img/media/032a16601df72913319163a209c1811de0e24576/0_49_5472_3283/master/5472.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=e968d9c2f923f2662608dbc77c7f4748
+Vhttps://cdn.theatlantic.com/assets/media/img/mt/2017/03/RTX2GZID/facebook.jpg?1489094248
 p48
 sg8
-g19
-sg10
-VOnly in America \u2013 why Milo had to cross the Atlantic to make it big
+VWhite Evangelicals See More Discrimination Against Christians Than Muslims PRRI Historical data suggests white evangelicals perceive even less discrimination against Muslims now than they did a few years ago\u2014or before the election.\u000aWhen this question was asked in a December 2013 PRRI survey, 59 percent of white evangelicals said they think Muslims face a lot of discrimination.\u000aThey were the only religious group more likely to believe Christians face discrimination compared to Muslims.\u000aRelated Story The Christian Retreat From Public Life Overall, people were twice as likely to say Muslims face discrimination as they were to say the same thing about Christians.\u000aWhite Catholics and white mainline Protestants were both in line with the American average: Each group was roughly twice as likely to say Muslims face discrimination compared to how they see the Christian experience.
 p49
-sa(dp50
+sg10
+VWhite Evangelicals Say They Face More Discrimination Than Muslims
+p50
+sa(dp51
 g4
-Vhttps://www.theguardian.com/us-news/video/2017/feb/23/kellyanne-conway-cpac-women-feminism
-p51
-sg6
-Vhttps://i.guim.co.uk/img/media/9536fb7417d4ac514cea2613e5b129b805d05c67/0_63_3500_2099/master/3500.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=b4fbac756493eeca06fefe862d18b364
+Vhttps://www.theatlantic.com/technology/archive/2016/05/the-brilliance-of-the-self-driving-minivan/481185/?utm_source=feed
 p52
-sg8
-VThe White House senior adviser Kellyanne Conway criticized feminists and the Women\u2019s March during her remarks on the opening day of the Conservative Political Action Conference (CPAC) near Washington DC.\u000aConway said she did not call herself a feminist because she is not \u2018anti-male\u2019 or \u2018pro-abortion\u2019
+sg6
+Vhttps://cdn.theatlantic.com/assets/media/img/mt/2016/05/minivan/facebook.jpg?1462391631
 p53
-sg10
-VKellyanne Conway at CPAC: 'Women don\u2019t like women in power' \u2013 video
+sg8
+VA new partnership between Google and Chrysler is a reminder that self-driving cars won\u2019t go anywhere until the public trusts they\u2019re safe.\u000aThe elevator analogy is a useful one, but it misses one of the major aspects of self-driving car technology that fuels uneasiness: How do these things make decisions?\u000aFor one thing, self-driving cars, when they become available for purchase, are likely to crop up first in certain kinds of environments, like small cities or large corporate campuses.\u000aYou couldn\u2019t possibly imagine relinquishing your life to this thing,\u201d Chris Urmson, the head of Google\u2019s self-driving cars project, told me in an interview last year.\u000aIn other words, Google\u2019s interest in self-driving minivans has to do with building public trust, a hurdle facing the developers of driverless cars that\u2019s arguably even greater than the remaining technological challenges.
 p54
-sasS'BBC'
+sg10
+VWhy Is Google Making Self-Driving Minivans?
 p55
-(lp56
-(dp57
+sasS'The New York Times'
+p56
+(lp57
+(dp58
 g4
-Vhttp://www.bbc.com/news/world-europe-39068843
-p58
-sg6
-Vhttp://ichef.bbci.co.uk/news/1024/cpsprodpb/12931/production/_94818067_b750e8e0-1187-479a-a243-529eec95e594.jpg
+Vhttp://www.nytimes.com/2017/03/10/world/europe/russian-revolution-100-years-putin.html?partner=rss&amp;emc=rss
 p59
-sg8
-VImage copyright Reuters Image caption Rodrigo Rato (centre) had denied any wrongdoing during the trialFormer IMF chief Rodrigo Rato has been sentenced to four-and-a-half years in jail for embezzling money from two Spanish banks he used to run.\u000aDuring the trial, Rato argued that the corporate credit cards were part of his pay package.\u000aA court in Madrid found him and more than 60 other former bankers guilty of using undeclared corporate credit cards to finance lavish lifestyles.\u000aAbout \u20ac12m (£10.1m; $12.7m) was spent from Caja Madrid and Bankia in 2003-12.\u000aRato resigned as head of Bankia shortly before its near-collapse in 2012.
+sg6
+Vhttps://static01.nyt.com/images/2017/03/11/world/11revolution4/11revolution4-facebookJumbo.jpg
 p60
-sg10
-VEx-IMF chief Rodrigo Rato gets 4.5 years for embezzlement
+sg8
+VAdvertisement Continue reading the main storyThere is also a damning lack of heroic figures in the revolution.\u000aAdvertisement Continue reading the main storyLiberals retort that a repressive government ignoring vast income disparity and curbing basic rights should be worried about history repeating itself.\u000aAdvertisement Continue reading the main story\u201cWe know well the consequences that these great upheavals can bring,\u201d he said in his state of the federation speech in December.\u000aPhotoMr. Putin\u2019s critiques of the revolution contrast markedly with his usual glowing tributes to Russian history.\u000aEight months later, Lenin and his marginal Bolshevik faction engineered a remarkable coup that gave rise to the world\u2019s first communist state.
 p61
-sa(dp62
+sg10
+V\u2018Revolution? What Revolution?\u2019 Russia Asks 100 Years Later
+p62
+sa(dp63
 g4
-Vhttp://www.bbc.com/news/world-asia-39063733
-p63
-sg6
-Vhttp://ichef-1.bbci.co.uk/news/1024/cpsprodpb/3FA2/production/_94809261_mediaitem94809260.jpg
+Vhttp://www.nytimes.com/2017/03/10/podcasts/the-daily/obamacare-music-issue.html
 p64
-sg8
-VMedia caption Japanese men compete in a bald tug-of-war contestMore than 30 bald men in Japan are holding their annual get-together which includes an unusual variant of the tug-of-war rope pulling game.\u000aThe Bald Men Club has attracted about 65 members from all over the country since it was formed in 1989.\u000aBald Men Club Chairman Teijiro Sugo, 70, said the hope was that the club would attract more members and become much bigger.\u000a"I want all the bald men all over the world to gather here so we can organise a bald men's Olympic tournament," he said.\u000aOr maybe I should say, I feel good about being a bald man," he said, "And that is thanks to this bald men's club."
+sg6
+Vhttps://static01.nyt.com/images/2017/03/10/us/10daily/10daily-facebookJumbo.jpg
 p65
-sg10
-VJapanese men celebrate 'baldy' pull factor
+sg8
+VAdvertisement Continue reading the main storyOr if you prefer another podcast player, you can find \u201cThe Daily\u201d there.\u000aAdvertisement Continue reading the main storyBackground reading:\u2022 How President Trump is marshaling the full power of his office to repeal the Affordable Care Act.\u000aAdvertisement Continue reading the main storyOn your iPhone or iPad:Open the preloaded app called \u201cPodcasts\u201d; it has a purple icon.\u000aIf you\u2019re reading this from your phone, tap this link, which will take you straight there.\u000aIf you\u2019re reading this from your phone, tap this link to play the latest episode and learn more about the app.
 p66
-sasS'Dailymail'
+sg10
+V\u2018The Daily\u2019: Obamacare on the Ground, and Music in the Air
 p67
-(lp68
-(dp69
+sa(dp68
 g4
-Vhttp://www.dailymail.co.uk/wires/reuters/article-4253596/Safran-rejects-TCI-criticism-Zodiac-Aero-bid.html?ITO=1490&amp;ns_mchannel=rss&amp;ns_campaign=1490
+Vhttps://www.nytimes.com/2017/03/10/opinion/the-republican-health-care-crackup.html
+p69
+sg6
+Vhttps://static01.nyt.com/images/2017/03/10/opinion/10brooksSub/10brooksSub-facebookJumbo.jpg
 p70
-sg6
-Vhttp://i.dailymail.co.uk/i/pix/m_logo_636x382px.png
+sg8
+VThe Republican health plan would make America\u2019s economic chasm worse.\u000aBut if his administration\u2019s health care approach teaches us anything, it is that he has no positive agenda for addressing them.\u000aAdvertisement Continue reading the main storyThe Republican plan will fuel cynicism.\u000aYou can come up with innovative ways to deliver state services, like affordable health care, but you can\u2019t just leave people on their own.\u000aAdvertisement Continue reading the main storyNew social crises transform party philosophies.
 p71
-sg8
-VTCI believes shareholders should be able to vote on the merger plan before the cash bid for at least 50 percent of Zodiac goes ahead.\u000aIn an open letter to TCI, Safran defended its strategy of diversifying from its core aero engines business as it gains access to Zodiac's profitable aircraft equipment activities and expressed confidence in its financial goals.\u000aPARIS, Feb 23 (Reuters) - France's Safran rejected criticism by a UK hedge fund concerning the strategy, structure and financial terms of a proposed $9 billion friendly bid for Zodiac Aerospace and said it stood by its plans to acquire the seats manufacturer.\u000a"The board is not for turning," Safran Chairman Ross McInnes told Reuters when asked whether the company would modify the terms or structure of its proposal to acquire Zodiac.\u000aStepping up a war of words over its agreed offer to create the world's third largest aerospace supplier, the French aero engine maker sent a six-page rebuttal to TCI Fund Management and accused it of waging a public campaign to undermine its project.
+sg10
+VThe Republican Health Care Crackup
 p72
-sg10
-VSafran rejects TCI criticism of Zodiac Aero bid
+sasS'CNN'
 p73
-sa(dp74
+(lp74
+(dp75
 g4
-Vhttp://www.dailymail.co.uk/sciencetech/article-4253558/First-details-Nokia-s-new-3310-revealed.html#comments
-p75
-sg6
-Vhttp://i.dailymail.co.uk/i/pix/2017/02/14/15/3D34BD5300000578-0-image-a-32_1487086224075.jpg
+Vhttp://www.cnn.com/2017/03/10/health/orgasm-frequency-sex-explainer-study/index.html
 p76
-sg8
-VRumours the classic Nokia 3310 could be reintroduced took the internet by storm earlier this month - and now the first details of the new handset have been revealed.\u000aThe original 3310 was released in 2000, as a replacement for the previous fan favourite - the 3210.\u000aScroll down for videoA comeback by the classic Nokia 3310 handset is rumoured for the upcoming Mobile World Congress, being held in Barcelona from 27 February to 2 March, 2017.\u000aAs well as the 3310 revamp and more details of the already revealed Nokia 6, other stars of the show are thought to be the Nokia 5 and Nokia 3.\u000aThe original 3310 was released in 2000 and became one of the best-selling handsets of all time, selling more than 100 million units worldwide.
-p77
-sg10
-VFirst details of Nokia's 'new' 3310 revealed
-p78
-sa(dp79
-g4
-Vhttp://www.dailymail.co.uk/sport/football/article-4253348/Everton-striker-Romelu-Lukaku-set-face-Sunderland.html#comments
-p80
 sg6
-Vhttp://i.dailymail.co.uk/i/pix/2017/02/23/16/3D8050F700000578-0-image-a-33_1487865933010.jpg
-p81
+Vhttp://i2.cdn.cnn.com/cnnnext/dam/assets/131122232657-sex-couple-feet-bed-super-tease.jpg
+p77
 sg8
-g19
+VShe added that studying orgasm frequency remains an important area of research since orgasms have been linked to greater satisfaction with personal relationships.\u000a"What makes women orgasm is the focus of pretty intense speculation.\u000a"Lesbian women orgasm more often than heterosexual women but less often than men," he said.\u000a(CNN) More and more studies are shedding light on the "orgasm gap," which refers to how men orgasm during sex more frequently than women.\u000aFor a woman with such anatomy to achieve orgasm, Lloyd recommended trying "manual stimulation of the clitoris during intercourse."
+p78
 sg10
-VEverton striker Romelu Lukaku set to face Sunderland
+VOrgasms: Who has them most, least -- and why
+p79
+sa(dp80
+g4
+Vhttp://inhealth.cnn.com/treating-psoriatic-arthritis/exercise-helps-ease-the-pain-of-psoriatic-arthritis?did=t1_atftxt
+p81
+sg6
+Vhttps://d33ljpvc0tflz5.cloudfront.net/dims3/MMH/thumbnail/400x210>/quality/75/http://d26ua9paks4zq.cloudfront.net/65/84/2932e67144db85b9271d37d96e82/resizes/500/image-happy-senior-woman-exercising-outdoors.jpg
 p82
+sg8
+VExercise Helps Ease the Pain of Psoriatic Arthritis By Cindy KuzmaWas this helpful?\u000aBut if you have psoriatic arthritis, it's more than a good idea: It's a critical component of your overall treatment plan.\u000aThe Right MovesThough everyone's needs are different, some exercises tend to help many people with psoriatic arthritis and other types of arthritis.\u000aOften you can find special fitness classes targeted toward people with psoriatic arthritis.\u000aFor most people with psoriatic arthritis, three types of exercises are recommended: stretching and other flexibility movements, strengthening exercises, and cardiovascular workouts.
+p83
+sg10
+VExercise Helps Ease the Pain of Psoriatic Arthritis
+p84
+sa(dp85
+g4
+Vhttp://www.cnn.com/2017/03/10/asia/malaysia-north-korea-kim-id/index.html
+p86
+sg6
+Vhttp://i2.cdn.cnn.com/cnnnext/dam/assets/170221112456-kim-jong-nam-death-investigation-00002905-super-tease.jpg
+p87
+sg8
+VIt marks the first time police have officially confirmed the victim is indeed Kim Jong Nam.\u000aHe said police will hand Kim's body over to the Malaysian Health Ministry since no one has claimed it.\u000aAsked if Kim's relatives had been notified about the positive identification, the police chief replied: "Yes, we have already informed the relatives, so it seems no one is taking (the body)."\u000a"We have fulfilled the requirement of the laws on his identification," said Khalid Abu Bakar, inspector general of the Royal Malaysia Police.\u000aHe declined to elaborate on how police confirmed the man's identity, citing the security and safety of witnesses.
+p88
+sg10
+VKim Jong Nam death: Malaysia positively identifies body of man killed at airport
+p89
+sasS'The Economist'
+p90
+(lp91
+(dp92
+g4
+Vhttps://execed.economist.com/esade-business-law-school/people-leadership-and-team-management-2017-04-21?gsrc=wmbaslider
+p93
+sg6
+V
+p94
+sg8
+VThe email will contain your contact information so a school representative will be able to get in touch with you.\u000aGiven nameFamily nameYour email addressYour phone numberJob Title Please select a job title Top-level (C-Suite, Owner, President, Director) Mid-level (Vice President, regional manager, managing director) Professional (associate, analyst, lower level manager) Entry level, intern or studentIndustry Please select an industry Accounting and finance Corporate planning/business development Education/teaching Engineering General management Human resources International operations IT/computers/technology Legal/lawyer Manufacturing/production Medical PR/corporate communications Property and premises Public policy Scientific and technical services Sales Transport and distribution OtherSubmitDisclaimer: When you click submit, we will send an email on your behalf to Esade Business & Law School from which you are requesting information.
+p95
+sg10
+VPeople Leadership and Team Management
+p96
+sa(dp97
+g4
+Vhttp://www.economist.com/center-creative-leadership/leadership-peak-2017-03-20
+p98
+sg6
+Vhttp://cdn.static-economist.com/sites/default/files/404.jpg
+p99
+sg8
+VWe are unable to find the page you're looking for.\u000aTry exploring the navigation links above to locate what you're after,or use the search box at the top of the page.
+p100
+sg10
+VPage not found
+p101
+sa(dp102
+g4
+Vhttp://www.economist.com/usb-executive-development/organisational-ethics-2017-03-23
+p103
+sg6
+Vhttp://cdn.static-economist.com/sites/default/files/404.jpg
+p104
+sg8
+VWe are unable to find the page you're looking for.\u000aTry exploring the navigation links above to locate what you're after,or use the search box at the top of the page.
+p105
+sg10
+VPage not found
+p106
+sasS'The Guardian'
+p107
+(lp108
+(dp109
+g4
+Vhttps://www.theguardian.com/film/2016/sep/14/cannibal-horror-film-raw-toronto-film-festival
+p110
+sg6
+Vhttps://i.guim.co.uk/img/media/6b85ac4fadce8372947e948758c34aa7b695b5a1/0_9_744_446/744.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=8f8b4d703cbbcab1a38239672d8a0a89
+p111
+sg8
+VParamedics were called to a Toronto film screening on Tuesday, after some cinemagoers fainted during a cannibal horror film.\u000aIn 2012 a number of people fainted during screenings of the horror film V/H/S.\u000aRaw, written and directed by Julia Ducournau, tells the all-too-common tale of a vegetarian woman becoming a cannibal after being forced to eat raw rabbit liver during a veterinarian school initiation.\u000aThe swoonings occurred during the movie Raw, a blood and guts offering that has been described as a \u201chuge, satisfying surprise\u201d, but also has prompted one critic to warn that viewers may need to \u201creach for the barf bag\u201d.\u000a\u201cAn ambulance had to be called to the scene as the film became too much for a couple patrons,\u201d Ryan Werner, who is handling the film\u2019s marketing, said in a statement.
+p112
+sg10
+VCannibal horror film too Raw for viewers as paramedics are called
+p113
+sa(dp114
+g4
+Vhttps://www.theguardian.com/football/the-gentleman-ultra/2017/mar/10/italy-cs-lebowski-football-florence-english
+p115
+sg6
+Vhttps://i.guim.co.uk/img/media/63019e4cefd8152e675867d60b0806b31f395baf/0_196_3264_1958/master/3264.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=959279369270a945def343f0518854ec
+p116
+sg8
+VUndeterred by losing their bid to retain their home at San Donnino, fan-owned CS Lebowski continue their programme of inclusion.\u000aInspired by a friend who had read the team\u2019s remarkable story, Ferguson contacted CS Lebowski through their Facebook page.\u000aGavin Ferguson in his CS Lebowski gear.\u000aThey welcome everyone who wants to watch the team, have opened a school of football and now have an English player among their number.\u000aPhotograph: Chloe BeresfordHaving played for his university side in Glasgow and for a Sunday League team in London, Ferguson was on the lookout for a club in Florence and CS Lebowski were his intended destination.
+p117
+sg10
+VThere aren't many English footballers in Italy \u2013 but there is one at CS Lebowski
+p118
+sa(dp119
+g4
+Vhttps://www.theguardian.com/football/2017/mar/09/harry-kane-loan-millwall-tottenham-fa-cup
+p120
+sg6
+Vhttps://i.guim.co.uk/img/media/e9a0e1e37f8c360fd6ee6e37a6fac47c0b2af0d1/0_0_3075_1846/master/3075.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNS8yNS9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&s=754929808906b951ffa414f16e4ef59b
+p121
+sg8
+VHe\u2019s going to pull his quad, here.\u2019 I\u2019d say to Harry: \u2018Come on, we\u2019ve got to go.\u000a\u201cIt\u2019s safe to say that we probably would not have stayed up had Harry not come,\u201d Gallen said.\u000aIt was the night when Harry Kane gilded his Millwall hero status.\u000aHe didn\u2019t give it: \u2018I\u2019m a Tottenham player.\u2019 Both him and Ryan Mason were really decent young lads.\u000a\u201cIn my 20 years of coaching, I\u2019ve never seen a player practise as much as Harry,\u201d Gallen said.
+p122
+sg10
+VHow Harry Kane\u2019s loan saved Millwall from relegation and made him a man
+p123
 sas.

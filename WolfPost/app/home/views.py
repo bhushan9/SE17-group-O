@@ -40,7 +40,7 @@ def test(value):
 	'BBC':'http://www.bbc.com/news', \
 	'The Economist':'http://www.economist.com/' ,\
 	'CNN' : 'http://www.cnn.com/', \
-	'New York Times' : 'https://www.nytimes.com/', \
+	'The New York Times' : 'https://www.nytimes.com/', \
 	'The Atlantic' : 'https://www.theatlantic.com/',\
 	'The Guardian' : 'https://www.theguardian.com/us' }
     news_paper=newspaper.build(news_link_dict[value])

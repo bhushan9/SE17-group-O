@@ -14,6 +14,10 @@ def parse_article(article):
 	article.download()
 	article.parse()
 	article.nlp()
+	if  not article.summary:
+		article.download()
+		article.parse()
+		article.nlp()
 	return article.title, article.summary, article.top_image, article.url 
 
 
@@ -36,7 +40,7 @@ def download_news():
 			'BBC'		: 'http://www.bbc.com/news',
 			'The Economist'	: 'http://www.economist.com',
 			'CNN' 		: 'http://www.cnn.com',
-			'New York Times': 'https://www.nytimes.com',
+			'The New York Times': 'https://www.nytimes.com',
 			'The Atlantic'	: 'https://www.theatlantic.com',
 			'The Guardian'	: 'https://www.theguardian.com/us'}
 	sites = dict()
@@ -72,9 +76,13 @@ def download_news():
 		print 'News Updated Successfully'
 
 
+
+
+
+
 def news_job():
 	scheduler = BackgroundScheduler()
-	scheduler.add_job(download_news, 'interval', minutes = 10)
+	scheduler.add_job(download_news, 'interval', minutes = 5)
 	scheduler.start()
 
 
