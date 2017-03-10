@@ -20,7 +20,7 @@ a {
     margin:0 auto;
     padding-bottom:25px;
     background:#ededf2;
-    width:504px;
+    width:60%;
     border:1px solid #ACD8F0; }
   
 #loginform { padding-top:18px; }
@@ -34,7 +34,7 @@ a {
     padding:10px;
     background:#fff;
     height:270px;
-    width:430px;
+    width:90%;
     border:1px solid #ACD8F0;
     overflow:auto; }
   
