@@ -70,22 +70,39 @@ def clean_content(text):
 @login_required
 def news():
     content = ''
-    title = ''
-    url = ''
-    image = ''
+    content0=content1=content2 = ''
+    title0=title1=title2= ''
+    url0=url1=url2 = ''
+    image0=image1=image2 = ''
     if request.method == 'POST':
     	value = request.form['submit']
 	news = unpickle_news()
 	try:
-    	    content = news[value][0]['summary']
-            title = news[value][0]['title']
-            url = news[value][0]['url']
-            image = news[value][0]['image']
+    	    content0 = news[value][0]['summary']
+            title0 = news[value][0]['title']
+            url0 = news[value][0]['url']
+            image0 = news[value][0]['image']
+
+            content1 = news[value][1]['summary']
+            title1 = news[value][1]['title']
+            url1 = news[value][1]['url']
+            image1 = news[value][1]['image']
+
+            content2 = news[value][2]['summary']
+            title2 = news[value][2]['title']
+            url2 = news[value][2]['url']
+            image2 = news[value][2]['image']
         except KeyError:
             content = 'Key Error. No value for ' + value 
     elif request.method == 'GET':
 	content = 'No News Found For Source'
     	pass
     
-    tts_summary = clean_content(content)
-    return render_template('home/news.html', title = title , content = content, tts_summary = tts_summary ,image = image)    	    
+    tts_summary0 = clean_content(content0)
+    tts_summary1 = clean_content(content1)
+    tts_summary2 = clean_content(content2)
+    return render_template('home/news.html', title0 = title0 , content0 = content0, tts_summary0 = tts_summary0 ,image0 = image0, url0 = url0,
+        title1 = title1 , content1 = content1, tts_summary1 = tts_summary1 ,image1 = image1, url1 = url1,
+        title2 = title2 , content2 = content2, tts_summary2 = tts_summary2 ,image2 = image2, url2 = url2
+
+        )    	    
