@@ -88,4 +88,4 @@ def news():
     	pass
     
     tts_summary = clean_content(content)
-    return render_template('home/news.html', title = title , content = content, tts_summary = tts_summary)    	    
+    return render_template('home/news.html', title = title , content = content, tts_summary = tts_summary ,image = image)    	    
