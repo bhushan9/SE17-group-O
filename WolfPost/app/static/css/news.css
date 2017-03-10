@@ -20,7 +20,8 @@ a {
     margin:0 auto;
     padding-bottom:25px;
     background:#ededf2;
-    width:60%;
+    width:75%;
+    height: 75%;
     border:1px solid #ACD8F0; }
   
 #loginform { padding-top:18px; }
