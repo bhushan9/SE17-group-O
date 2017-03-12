@@ -37,24 +37,6 @@ def admin_dashboard():
     return render_template('home/admin_dashboard.html', title = "Dashboard")
 
 
-def test(value):
-    news_link_dict={'Dailymail' : 'http://www.dailymail.co.uk/ushome/index.html', \
-	'BBC':'http://www.bbc.com/news', \
-	'The Economist':'http://www.economist.com/' ,\
-	'CNN' : 'http://www.cnn.com/', \
-	'The New York Times' : 'https://www.nytimes.com/', \
-	'The Atlantic' : 'https://www.theatlantic.com/',\
-	'The Guardian' : 'https://www.theguardian.com/us' }
-    news_paper=newspaper.build(news_link_dict[value])
-    if news_paper.articles[0]:
-    	article=news_paper.articles[0]
-    else:
-    	article = "No article found"	
-    article.download()
-    article.parse()
-    article.nlp()
-    return article.summary
-
 
 def unpickle_news():
 	#Unpickle news file
