@@ -38,8 +38,8 @@ def poster():
         	#for i in range(len(z['articles'])):
 		text = dict_response['articles'][0]['description']
 		url =  dict_response['articles'][0]['url']
-		twitter.post(url + ' ' + text)
-		print url + ' ' + text
+		twitter.post(text + ' ' + url)
+		print text + ' ' + url
 		print
 
 

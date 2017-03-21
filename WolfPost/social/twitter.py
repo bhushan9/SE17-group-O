@@ -21,14 +21,13 @@ class Twitter:
 	def splitter(self, text):
   		chunks = ['']
   		words = text.split()
-  
   		for w in words:
 			current_chunk = len(chunks) - 1
     			if len(chunks[current_chunk] + w) < 122:
       				chunks[current_chunk] += ' ' + w
     			else:
       				chunks.append('')
-
+				chunks[current_chunk + 1] = w
 		chunks = [str(chunks.index(x) + 1) + '/' + str(len(chunks)) + ' ' + x for x in chunks ]
 		return chunks
 
