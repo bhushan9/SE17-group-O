@@ -85,7 +85,7 @@ def news():
         z= r.json()
         tts_summary=[]
         for i in range(len(z["articles"])):
-            tts_summary.append(clean_content(z["articles"][i]["description"]))  
+            tts_summary.append(z["articles"][i]["description"])
     elif request.method == 'GET':
         pass
 
