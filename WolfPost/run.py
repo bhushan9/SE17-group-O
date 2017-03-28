@@ -7,8 +7,7 @@ from app import create_app
 #from social import social_job
 
 
-config_name = os.getenv('FLASK_CONFIG')
-app = create_app(config_name)
+app = create_app('development')
 
 if __name__ == '__main__':
     #news_job.news_job()
