@@ -12,5 +12,5 @@ app = create_app('development')
 if __name__ == '__main__':
     #news_job.news_job()
     #social_job.social_job()
-    port = int(os.enviorn.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, use_reloader=False)
