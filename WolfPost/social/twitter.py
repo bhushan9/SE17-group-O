@@ -28,7 +28,7 @@ class Twitter:
             else:
                 chunks.append('')
             chunks[current_chunk + 1] = w
-        chunks = [str(chunks.index(x) + 1) + '/' + str(len(chunks)) + ' ' + x for x in chunks ]
+            chunks = [str(chunks.index(x) + 1) + '/' + str(len(chunks)) + ' ' + x for x in chunks ]
         return chunks
 
 
