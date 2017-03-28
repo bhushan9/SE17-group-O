@@ -54,7 +54,7 @@ def login():
             if user.is_admin:
             	return redirect(url_for('home.admin_dashboard'))
             else:	
-            	return redirect(url_for('home.dashboard'))
+            	return redirect(url_for('home.news'))
 
         # when login details are incorrect
         else:

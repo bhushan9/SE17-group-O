@@ -27,7 +27,7 @@
   <input type="submit" name="submit" value="CNN" class="btn btn-danger btn-lg "/>
   <input type="submit" name="submit" value="The New York Times" class="btn btn-danger btn-lg "/>
   <input type="submit" name="submit" value="The Economist" class="btn btn-danger btn-lg "/>
-  <input type="submit" name="submit" value="The Atlantic" class="btn btn-danger btn-lg "/>
+  <input type="submit" name="submit" value="Bloomberg" class="btn btn-danger btn-lg "/>
   <input type="submit" name="submit" value="BBC" class="btn btn-danger btn-lg "/>
   <input type="submit" name="submit" value="The Guardian" class="btn btn-danger btn-lg "/>
   </div>
@@ -47,29 +47,19 @@
     </div>
      
     <div id="newsfeed"> 
-     <img src="{{image0}}" style="width:100%;height:100%;">
-      <br> {{title0}} &nbsp: {{content0}} 
-      <br> 
-     <a href="{{url0}}"> Click Here for full article </a>  
-     <br>
-     <input onclick='responsiveVoice.speak("{{ tts_summary0 }}");' type='button' value='Play Audio' />
-     <hr>
 
-      <img src="{{image1}}" style="width:100%;height:100%;">
-      <br> {{title1}} &nbsp: {{content1}} 
-      <br> 
-     <a href="{{url1}}"> Click Here for full article </a>  
-     <br>
-     <input onclick='responsiveVoice.speak("{{ tts_summary1 }}");' type='button' value='Play Audio' />
-     <hr>
+    
 
-      <img src="{{image2}}" style="width:100%;height:100%;">
-      <br> {{title2}} &nbsp: {{content2}} 
+    {% for i in range(data["articles"]|length)%}
+     <img src="{{data["articles"][i]["urlToImage"]}}" style="width:100%;height:100%;">
+      <br> {{data["articles"][i]["title"]}} &nbsp: {{data["articles"][i]["description"]}} 
       <br> 
-     <a href="{{url2}}"> Click Here for full article </a>  
+     <a href="{{data["articles"][i]["url"]}}" style= "color : red" target="_blank"> Click Here for full article </a>  
      <br>
-     <input onclick='responsiveVoice.speak("{{ tts_summary2 }}");' type='button' value='Play Audio' />
-     <hr>
+     <input onclick='responsiveVoice.speak("{{ tts_summary[i] }}");' type='button' value='Play Audio' /> &nbsp
+     
+     {% endfor %}
+     
 
 
 	
@@ -77,6 +67,10 @@
      
   
 </div>
+
+     <hr>
+
+
 
 {% endblock %}
  

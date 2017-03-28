@@ -30,18 +30,18 @@ p.copyright {
 .alert-info {
     width: 50%;
     margin: auto;
-    color: #687430;
-    background-color: #e6ecca;
-    border-color: #aec251;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-color: #FF0000;
 }
 
 .btn-default {
-    border-color: #aec251;
-    color: #aec251;
+    border-color: #FF0000;
+    color: #FF0000;
 }
 
 .btn-default:hover {
-    background-color: #aec251;
+    background-color: #FF6A4A;
 }
 
 .center {
