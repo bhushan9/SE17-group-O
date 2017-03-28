@@ -54,7 +54,7 @@
      <img src="{{data["articles"][i]["urlToImage"]}}" style="width:100%;height:100%;">
       <br> {{data["articles"][i]["title"]}} &nbsp: {{data["articles"][i]["description"]}} 
       <br> 
-     <a href="{{data["articles"][i]["url"]}}" style= "color : red"> Click Here for full article </a>  
+     <a href="{{data["articles"][i]["url"]}}" style= "color : red" target="_blank"> Click Here for full article </a>  
      <br>
      <input onclick='responsiveVoice.speak("{{ tts_summary[i] }}");' type='button' value='Play Audio' /> &nbsp
      
