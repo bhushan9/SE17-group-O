@@ -36,18 +36,31 @@ def admin_dashboard():
     	abort(403)
     return render_template('home/admin_dashboard.html', title = "Dashboard")
 
+@home.route('/like' ,methods = ['POST','GET'] )
+def contact():
+    count = 0
+    if request.method == 'POST':
+        if request.form['Like'] == 'Like':
+            print("LIKEEEEEEEEEEEEEEEEEEEEEEE")
+            count = count + 1
+            return render_template ('home/news.html', like = count)
+
+
+
 
 
 def unpickle_news():
 	#Unpickle news file
 	file = open('news/news.data', 'r')
 	data = pickle.load(file)
-	return data
+	return data 
 
 
 def clean_content(text):
 	do_not_remove = '.!?= -+%$'
 	return re.sub(r'[^\w'+do_not_remove+']', '', text) 
+
+
 
 
 @home.route('/news', methods = ['POST','GET'])
