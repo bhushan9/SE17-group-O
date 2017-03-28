@@ -1,54 +1,44 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
 from twitter import Twitter
-import pickle
 
+import requests
 import logging
 logging.basicConfig()
 
-import newspaper
-import nltk
 
 i = 0
 twitter = Twitter()
-
-
-def unpickle_news():
-	#Unpickle news file
-	file = open('news/news.data', 'r')
-	data = pickle.load(file)
-	return data
+api_key = ''
 
 
 def poster():
-	print 'Twitter job started...'
-	news_sources = {'Dailymail' 	: 'http://www.dailymail.co.uk/ushome/index.html',
-			'BBC'		: 'http://www.bbc.com/news',
-			'The Economist'	: 'http://www.economist.com',
-			'CNN' 		: 'http://www.cnn.com',
-			'The New York Times': 'https://www.nytimes.com',
-			'The Atlantic'	: 'https://www.theatlantic.com',
-			'The Guardian'	: 'https://www.theguardian.com/us'}
+    print 'Twitter job started...'
+    news_link_dict={'Dailymail' : 'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=' + api_key,
+            'BBC':'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=' + api_key,
+            'The Economist':'https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=' + api_key,
+            'CNN' : 'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=' + api_key,
+            'The New York Times' : 'https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=' + api_key,
+            'Bloomberg' : 'https://newsapi.org/v1/articles?source=bloomberg&sortBy=top&apiKey=' + api_key,
+            'The Guardian' : 'https://newsapi.org/v1/articles?source=the-guardian-uk&sortBy=top&apiKey=' + api_key }
 
-	news_data = unpickle_news()
+    for key in news_link_dict:
+        response = requests.get(news_link_dict[key])
+        dict_response = response.json()
 
-	for source in news_sources:
-		try:
-			for data in news_data[source]:
-				print data['summary'] + ' ' + data['url']
-				twitter.post(data['summary'] + ' ' + data['url'])
-		except:
-			print 'something went wrong: ' + source
+        #Get top article for new source
+        text = dict_response['articles'][0]['description']
+        url =  dict_response['articles'][0]['url']
+        twitter.post(text + ' ' + url)
 
-	print 'Twitter job stopped...'
-
+        print text + ' ' + url
+        print
 
 
 def social_job():
-	scheduler = BackgroundScheduler()
-	scheduler.add_job(poster, 'interval', minutes = 5)
-	scheduler.start()
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(poster, 'interval', minutes = 30)
+    scheduler.start()
 
 
 if __name__ == '__main__':
-	social_job()
+    social_job()
