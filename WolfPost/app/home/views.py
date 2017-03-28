@@ -3,8 +3,6 @@
 from flask import abort, render_template, request, redirect, jsonify
 from flask_login import current_user, login_required
 from sys import argv
-import newspaper
-import nltk
 import pickle
 import re
 import requests
