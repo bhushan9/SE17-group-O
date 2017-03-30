@@ -11,6 +11,7 @@ from config import app_config
 
 # db variable initialization
 app_thing = Flask(__name__)
+import os
 app_thing.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 db = SQLAlchemy(app_thing)
 
@@ -19,7 +20,6 @@ login_manager = LoginManager()
 def create_app(config_name):
     app = Flask(__name__, instance_relative_config=True)
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-    import os
     try:
         app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
     except:
