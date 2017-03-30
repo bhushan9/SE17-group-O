@@ -10,7 +10,10 @@ from flask_bootstrap import Bootstrap
 from config import app_config
 
 # db variable initialization
-db = SQLAlchemy()
+app_thing = Flask(__name__)
+app_thing.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+db = SQLAlchemy(app_thing)
+
 login_manager = LoginManager()
 
 def create_app(config_name):
