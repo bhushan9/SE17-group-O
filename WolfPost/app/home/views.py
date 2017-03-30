@@ -13,9 +13,9 @@ from . import home
 @home.route('/')
 def homepage():
     """
-    Render the homepage template on the / route
+    Redirect to news
     """
-    return render_template('home/index.html', title="Welcome")
+    return redirect('/news', code=302)
 
 
 @home.route('/dashboard')
@@ -34,6 +34,7 @@ def admin_dashboard():
     	abort(403)
     return render_template('home/admin_dashboard.html', title = "Dashboard")
 
+
 @home.route('/like' ,methods = ['POST','GET'] )
 def contact():
     count = 0
@@ -42,9 +43,6 @@ def contact():
             print("LIKEEEEEEEEEEEEEEEEEEEEEEE")
             count = count + 1
             return render_template ('home/news.html', like = count)
-
-
-
 
 
 def unpickle_news():
@@ -59,32 +57,32 @@ def clean_content(text):
 	return re.sub(r'[^\w'+do_not_remove+']', '', text) 
 
 
-
-
-@home.route('/news', methods = ['POST','GET'])
-@login_required
-def news():
-    value = ''
-    z = ''
-    tts_summary = ''
-
-    news_link_dict={'Dailymail' : 'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=a97466277811418284e9525947633cbd', \
+def get_news(value):
+    	news_link_dict={'Dailymail' : 'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=a97466277811418284e9525947633cbd', \
     'BBC':'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=a97466277811418284e9525947633cbd', \
     'The Economist':'https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=a97466277811418284e9525947633cbd' ,\
     'CNN' : 'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=a97466277811418284e9525947633cbd', \
     'The New York Times' : 'https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=a97466277811418284e9525947633cbd', \
     'Bloomberg' : 'https://newsapi.org/v1/articles?source=bloomberg&sortBy=top&apiKey=a97466277811418284e9525947633cbd',\
     'The Guardian' : 'https://newsapi.org/v1/articles?source=the-guardian-uk&sortBy=top&apiKey=a97466277811418284e9525947633cbd' }
+
+        r = requests.get(news_link_dict[value])
+       	z = r.json()
+        tts_summary=[]
+        for i in range(len(z["articles"])):
+         	tts_summary.append(z["articles"][i]["description"])
+	return z, tts_summary
+
+@home.route('/news', methods = ['POST','GET'])
+def news():
+    value = ''
+    z = ''
+    tts_summary = ''
    
     if request.method == 'POST':
         value = request.form['submit']
-        print("KRLGDSGDSJKBGKJDSBGKJDSBGJKDSBGJDS")
-        r=requests.get(news_link_dict[value])
-        z= r.json()
-        tts_summary=[]
-        for i in range(len(z["articles"])):
-            tts_summary.append(z["articles"][i]["description"])
+        z, tts_summary = get_news(value)
     elif request.method == 'GET':
-        pass
+        z, tts_summary = get_news('BBC')
 
     return render_template('home/news.html', data = z , tts_summary = tts_summary  )    	    
