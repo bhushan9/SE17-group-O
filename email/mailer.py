@@ -115,6 +115,7 @@ for key in news_link_dict:
     text = dict_response['articles'][0]['description']
     url =  dict_response['articles'][0]['url']
     image = dict_response['articles'][0]['urlToImage']
+    #print title
     soup = bs(html, 'html.parser')
     img = soup.find('img')
     img['src'] = image
@@ -124,7 +125,7 @@ for key in news_link_dict:
     desc.string = text
     a = soup.find('a')
     a['href'] = url
-    body+=str(html)
+    body+=str(soup)
 		
 bottom = """	<tr>
 			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
@@ -154,7 +155,7 @@ bottom = """	<tr>
 </html>
 """	
 #smsg.attach(MIMEText(texts, 'plain'))
-body+=bottom
+#body+=bottom
 msg.attach(MIMEText(body, 'html'))
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
