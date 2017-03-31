@@ -6,8 +6,8 @@ import pynliner
 import datetime
 from bs4 import BeautifulSoup as bs
 import requests
-fromaddr = "rohitnambisan99@gmail.com"
-toaddr = "zithomas@ncsu.edu"
+fromaddr = "xxxxxxx"
+toaddr = "xxxxxxxx"
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
@@ -159,7 +159,7 @@ bottom = """	<tr>
 msg.attach(MIMEText(body, 'html'))
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(fromaddr, "manchesterutd")
+server.login(fromaddr, "xxxxxxx")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
