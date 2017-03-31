@@ -26,7 +26,24 @@ def register():
         db.session.add(user)
         db.session.commit()
         flash('You have successfully registered! You may now login.')
+	fromaddr = "rohitnambisan99@gmail.com"
+	toaddr = form.email.data
+	msg = MIMEMultipart()
+	msg['From'] = fromaddr
+	msg['To'] = toaddr
+	msg['Subject'] = "Account Confirmation"
+	full_html = """
+	Thank you for subscribing to WolfPost. Your account is successfully registered.
 
+	Thank you
+	"""
+	msg.attach(MIMEText(full_html, 'plain'))
+	server = smtplib.SMTP('smtp.gmail.com', 587)
+	server.starttls()
+	server.login(fromaddr, "manchesterutd")
+	text = msg.as_string()
+	server.sendmail(fromaddr, toaddr, text)
+	server.quit()
         # redirect to the login page
         return redirect(url_for('auth.login'))
 
