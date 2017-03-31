@@ -7,7 +7,7 @@ import datetime
 from bs4 import BeautifulSoup as bs
 import requests
 fromaddr = "rohitnambisan99@gmail.com"
-toaddr = "rnambis@ncsu.edu"
+toaddr = "zithomas@ncsu.edu"
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
@@ -29,7 +29,7 @@ heading = """<html>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <title>Nettuts Email Newsletter</title>
    <style type="text/css">
-   	a {color: #4A72AF;}
+   	a {color:#ff0000;}
 	body, #header h1, #header h2, p {margin: 0; padding: 0;}
 	#main {border: 1px solid #cfcece;}
 	img {display: block;}
@@ -49,7 +49,7 @@ heading = """<html>
 <body>
 
 
-<table width="100%" cellpadding="0" cellspacing="0" bgcolor="e4e4e4"><tr><td>
+<table width="100%" cellpadding="0" cellspacing="0"><tr><td>
 
 
 <table id="top-message" cellpadding="20" cellspacing="0" width="600" align="center">
@@ -61,18 +61,18 @@ heading = """<html>
 	</table><!-- top message -->
 
 
-<table id="main" width="600" align="center" cellpadding="0" cellspacing="15" bgcolor="ffffff">
+<table id="main" width="600" align="center" cellpadding="0" cellspacing="15" bgcolor="#ffffff">
 		<tr>
 			<td>
-				<table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="8fb3e9">
+				<table id="header" cellpadding="10" cellspacing="0" align="center" bgcolor="#ff0000">
 					<tr>
-						<td width="570" bgcolor="7aa7e9"><h1>The WolfPost</h1></td>
+						<td width="570"><h1>The WolfPost</h1></td>
 					</tr>
 					<tr>
-						<td width="570" bgcolor="8fb3e9" style="background: url(https://pbs.twimg.com/profile_banners/831994731139837952/1487258441/1500x500);"><h2 style="color:#353030!important">News and Events</h2></td>
+						<td width="570"><h1>News and Events</h1></td>
 					</tr>
 					<tr>
-						<td width="570" align="right" bgcolor="7aa7e9"><p>July 2010</p></td>
+						<td width="570" align="right"><p>July 2010</p></td>
 					</tr>
 				</table><!-- header -->
 			</td>
@@ -95,10 +95,10 @@ for key in news_link_dict:
 					<tr>
 						<td width="170" valign="top">
 							<table cellpadding="5" cellspacing="0">
-								<tr><td bgcolor="d0d0d0"><img src="http://tessat.s3.amazonaws.com/coins_small.jpg" width="170" /></td></tr></table>
+								<tr><td bgcolor="d0d0d0"><img src="http://tessat.s3.amazonaws.com/coins_small.jpg" width="270" /></td></tr></table>
 						</td>
 						<td width="15"></td>
-						<td width="375" valign="top" colspan="3">
+						<td width="275" valign="top" colspan="3">
 							<h3>All New Site Design</h3>
 							<h4>It's 150% Better and 40% More Efficient!</h4>
 							<h5><a href="">Read more..</a> 
