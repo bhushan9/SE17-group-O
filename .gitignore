@@ -14,7 +14,7 @@ __pycache__/
 .Python
 env/
 *.pyc
-*.py
+*.pyc~
 build/
 develop-eggs/
 dist/
