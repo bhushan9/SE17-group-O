@@ -1,0 +1,36 @@
+from apscheduler.schedulers.blocking import BlockingScheduler
+from twitter import Twitter
+
+import logging
+logging.basicConfig()
+
+import newspaper
+import nltk
+
+i = 0
+twitter = Twitter()      
+
+
+def unpickle_news():
+	#Unpickle news file
+	file = open('../news/news.data', 'r')
+	data = pickle.load(file)
+	return data
+
+
+def social_job():
+	news_data = unpickle_news()
+
+	summary, top_image, url = save_news()
+	#twitter.post(summary, image = top_image)
+	
+	#remove line breaks
+	summary = summary.replace('\n', ' ').replace('\r', '')	
+
+	if summary != 'No Articles':
+		twitter.post(summary + '\r' + url)
+	print '\n' +  summary + ' ' + top_image + '\n'
+
+scheduler = BlockingScheduler()
+scheduler.add_job(some_job, 'interval', minutes = 5)
+scheduler.start()
