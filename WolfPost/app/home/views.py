@@ -1,12 +1,10 @@
 # app/home/views.py
 
-from flask import abort, render_template, request, redirect, jsonify
+from flask import abort, render_template, request, redirect
 from flask_login import current_user, login_required
-from sys import argv
 import pickle
 import re
 import requests
-import json
 
 from . import home
 
@@ -49,12 +47,12 @@ def unpickle_news():
 	#Unpickle news file
 	file = open('news/news.data', 'r')
 	data = pickle.load(file)
-	return data 
+	return data
 
 
 def clean_content(text):
 	do_not_remove = '.!?= -+%$'
-	return re.sub(r'[^\w'+do_not_remove+']', '', text) 
+	return re.sub(r'[^\w'+do_not_remove+']', '', text)
 
 
 def get_news(value):
@@ -78,11 +76,11 @@ def news():
     value = ''
     z = ''
     tts_summary = ''
-   
+
     if request.method == 'POST':
         value = request.form['submit']
         z, tts_summary = get_news(value)
     elif request.method == 'GET':
         z, tts_summary = get_news('BBC')
 
-    return render_template('home/news.html', data = z , tts_summary = tts_summary  )    	    
+    return render_template('home/news.html', data = z , tts_summary = tts_summary  )
