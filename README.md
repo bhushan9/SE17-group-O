@@ -19,9 +19,9 @@ The aim of the project is to bring out our own solutions in providing summarized
 We designed a Web Application that allows the users to create accounts and read news. It was developed in [Python Flask Web application framework](http://flask.pocoo.org/). It is located in the **WolfPost** folder. It is in the process of development. It will be also combined with a Twitter API, that could post the summarized news as tweets.
 
 
-## Solution2: Text-to-Speech News summarizer
+## Solution2: Email
 
-The second method was to provide an audio interface that could produce the news as computer generated speech. We are currently using a Javascript library to acomplish this.
+The second method we implemeted uses email to distribute aggrigate news. Newsletters are pushed out daily to members of our site. Only the top news stories from the previous day are sent out through email.
 
 
 ## Solution3: Twitter Bot
